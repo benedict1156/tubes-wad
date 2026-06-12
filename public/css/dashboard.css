@@ -1,0 +1,202 @@
+/* =====================
+   RESET & BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    color: white;
+    padding: 24px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* =====================
+   CONTENT
+===================== */
+.content {
+    flex: 1;
+    padding: 32px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+/* =====================
+   DASHBOARD CARD
+===================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* =====================
+   TABLE
+===================== */
+.table {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.table th {
+    background: #f8fafc;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.table td {
+    padding: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1e40af;
+}
+
+.btn-warning {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-danger {
+    background: #dc2626;
+    color: white;
+}
+
+/* =====================
+   FORM
+===================== */
+.form-container {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5f5;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* =====================
+   ACTIONS
+===================== */
+.action-group {
+    display: flex;
+    gap: 8px;
+}
